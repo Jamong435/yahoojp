@@ -251,35 +251,77 @@
 
                 </section>
 
-                
+
                 <section id="part2_wrapper">
                     <section id="part2">
                         <div id="wrapper_tab">
-                        <div class="tab">
-                            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'London')">ニュース</button>|
+                                <button class="tablinks" onclick="openCity(event, 'Paris')">経済</button>|
+                                <button class="tablinks" onclick="openCity(event, 'Tokyo')">エンタメ</button>|
+                                <button class="tablinks" onclick="openCity(event, 'London')">スポーツ</button>|
+                                <button class="tablinks" onclick="openCity(event, 'Paris')">国内</button>|
+                                <button class="tablinks" onclick="openCity(event, 'Tokyo')">国際</button>|
+                                <button class="tablinks" onclick="openCity(event, 'London')">IT・科学</button>|
+                                <button class="tablinks" onclick="openCity(event, 'Paris')">地域</button>
+
+                            </div>
                         </div>
-                    </div>
-                        <div id="London" class="tabcontent">
-                            <h3>London</h3>
-                            <p>London is the capital city of England.</p>
+                        <div id="London" class="tabcontent" style="display: block;">
+                            <div id="list_wrapper">
+                                <div id="wrapper_image">
+                                    <img src="https://news-pctr.c.yimg.jp/uUzvQ3lML_bkIqyakc1vFs-Knw39CLTsfp6KpenqJJA6u1g062gKp6DFLZS5ynEy-OIFH7IKfTzWS4KHUCFio_ZCtwac15_ptjmmja3o6aViZYiUQOcU9cUS19pWyLKHUq5PS4wzS-cK4p2OlFBDeQ=="
+                                        alt="" width="120px" height="150px" style="float: right;">
+                                        <a href="">最後の日曜日</a>
+                                        <p >8/30(日) 17:56<br>               
+                                            時事通信
+                                            </p>
+                                
+                                    </div>
+                                <p style="font-size: small; color: #999;">8/30(日) 19:50更新</p>
+                                <a href="">
+                                    <li>九州 台風接近待たず備えを</li>
+                                </a>
+                                <a href="">
+                                    <li>二階派 菅氏支持の方針固める</li>
+                                </a>
+                                <a href="">
+                                    <li>子供の自殺リスク 例年以上に</li>
+                                </a>
+                                <a href="">
+                                    <li>デマ判断限界「耐える」力を </li>
+                                </a>
+
+                                <a href="">
+                                    <li>九州 台風接近待たず備えを</li>
+                                </a>
+                                <a href="">
+                                    <li>新規にYouTuber 厳しい現実</li>
+                                </a>
+                                <a href="">
+                                    <li>長友佑都 仏1部マルセイユへ</li>
+                                </a>
+                                <a href="">
+                                    <li>福田沙紀もオスカー退社へ
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>貴景勝 元北天佑の次女と婚約
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>九州 台風接近待たず備えを</li>
+                                </a>
+
+                            </div>
+
                         </div>
-                
+
                         <div id="Paris" class="tabcontent">
                             <h3>Paris</h3>
                             <p>Paris is the capital of France.</p>
                         </div>
-                
+
                         <div id="Tokyo" class="tabcontent">
                             <h3>Tokyo</h3>
                             <p>Tokyo is the capital of Japan.</p>
@@ -302,7 +344,10 @@
         <script>
             function openCity(evt, cityName) {
                 var i, tabcontent, tablinks;
+                var basic;
+
                 tabcontent = document.getElementsByClassName("tabcontent");
+
                 for (i = 0; i < tabcontent.length; i++) {
                     tabcontent[i].style.display = "none";
                 }
@@ -316,7 +361,7 @@
         </script>
 
         <style>
-            
+
         </style> -->
 
 
