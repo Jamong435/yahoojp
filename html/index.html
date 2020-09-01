@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>쭈리야후</title>
+    <title>YahooCLONE</title>
     <!-- 아이콘을 가져올수있는 폰트어썸 -->
     <script src="https://kit.fontawesome.com/d805160ba2.js" crossorigin="anonymous"></script>
     <!-- 폰트를 가져올수있는 구글폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="../css/index_mobile.css" media="(max-width:600px)">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        media="(max-width:600px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 </head>
-<style>
-
-</style>
 
 <body>
     <!-- 적응형 : 메인 홈페이지 -->
@@ -787,6 +790,317 @@
 
     </div>
     <!-- 홈페이지야후 -->
+
+
+    <!--적응형 : 모바일 홈페이지  -->
+
+    <div class="mobile_yahoo">
+        <div id="wrapper_header_mobile">
+            <div id="header_mobile">
+                <img src="../image/image/logo.png" alt="" width="120px" style="padding: 10px;">
+
+                <!-- 네비게이션바 -->
+                <div id="nav">
+                    <a href=""><i class="fas fa-bell"></i></a>
+                    <input type="checkbox" id="menuicon" onclick="clicknav()">
+                    <ul>
+                        <li>
+                            <label for="menuicon">
+                                <span></span><span></span><span></span>
+                            </label>
+                        </li>
+                    </ul>
+                    <!-- 네비게이션바 꾸미기 -->
+                    <div class="sidebar">
+                        <div id="sliderwrapper">
+                            <p style="padding: 5px; font-size: 14px; font-weight: bold;">Yahoo!JAPAN ID</p>               
+                        </div>
+                        <div id="sliderid">
+                            <a href="">ログイン</a>
+                            <a href="">ID新規取得</a> 
+                        </div>
+                        <div id="sliderid">
+                            <a href="">毎日くじ</a> 
+                        </div>
+                        <div id="sliderwrapper">
+                            <p style="padding: 5px; font-size: 14px; font-weight: bold;">個人設定</p>               
+                        </div>
+                        <div id="sliderid">
+                            <a href="">天気・災害情報</a> 
+                            <a href="" style="font-size: 13px; padding: 3px; color: #ccc;">地域設定 ></a> 
+
+                        </div>
+                        <div id="sliderid">
+                            <a href="">占い</a> 
+                            <a href="" style="font-size: 13px; padding: 3px; color: #ccc;">星座設定 ></a> 
+                        </div>
+                        <div id="sliderid">
+                            <a href="">動画自動再生</a> 
+                            <a href="" style="font-size: 13px; padding: 3px; color: #ccc;">常にする ></a> 
+                        </div>
+                        <div id="sliderid">
+                            <a href="">路線運行情報</a> 
+                            <a href="" style="font-size: 13px; padding: 3px; color: #ccc;">路線設定 ></a> 
+                        </div>
+                        <div id="sliderid">
+                            <a href="">きせかえ</a> 
+                            <a href="" style="font-size: 13px; padding: 3px; color: #ccc;">テーマ設定</a> 
+                        </div>
+                        <div id="sliderid">
+                            <a href="">タブの編集</a> 
+                            <a href="" style="font-size: 13px; padding: 3px; color: #ccc;"></a> 
+                        </div>
+                        <div id="sliderwrapper">
+                            <p style="padding: 5px; font-size: 14px; font-weight: bold;">検索設定</p>               
+                        </div>
+                        <div id="sliderid">
+                            <a href="">キーワード入力補助</a> 
+                            <input type="checkbox" checked data-toggle="toggle"data-onstyle="success" data-offstyle="danger" data-size="small"> 
+                        </div>
+                        <div id="sliderid">
+                            <a href="">検索履歴</a>
+                            <input type="checkbox" checked data-toggle="toggle"data-onstyle="success" data-offstyle="danger" data-size="small"> 
+                             
+                        </div>
+                        <div id="sliderid">
+                            <p style="color: #999;">検索履歴を消去</p>
+                             
+                        </div>
+                        <div id="sliderwrapper">
+                            <p style="padding: 5px; font-size: 14px; font-weight: bold;">トップページについて</p>               
+                        </div>
+                        <div id="sliderid">
+                            <a href="">ご意見・ご要望</a> 
+                             
+                        </div>
+                        <div id="sliderwrapper">
+                            <p style="padding: 5px; font-size: 14px; font-weight: bold;">お知らせ</p>               
+                        </div>
+                        <div id="sliderid" style="height: 60px;">
+                            <a href="">令和2年7月豪雨への緊急災害支援募金受付中</a> 
+                             
+                        </div>
+                        <div id="sliderid" style="height: 60px;">
+                            <a href="">「Yahoo!スコア」終了のお知らせ（2020/6/29）</a> 
+                             
+                        </div>
+                        <div id="sliderid" style="height: 60px;">
+                            <a href="">2020年9月までに提供を終了するアプリとサービス（2020/5/29）</a> 
+                             
+                        </div>
+                        <div id="sliderid">
+                            <a href="">タブの編集</a> 
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile_serchbox" style="position: sticky; top: 0;" >
+            <form class="example" action="/action_page.php" style=" margin:auto;max-width:90%">
+                <input type="text" placeholder="映画ランキング" name="search2">
+                <button type="submit">検索</button>
+            </form>
+            
+        </div>
+
+
+        <div id="wrapper_mobile_box">
+            <div id="mobile_box">
+                <div id="box">
+                    <img src="https://s.yimg.jp/c/icon/s/bsc/2.0/mail80.png" alt="" width="50%" height="50%" style="margin-left: 15px;">
+                    <a href="">メール</a>
+                </div>
+                <div id="box" style="display:flex; flex-direction: row; flex-wrap: wrap;">
+                    <img src="https://s.yimg.jp/c/icon/s/bsc/2.0/weather80.png" alt="" width="40%" height="50%" >
+                    <a href="" style="font-size: 10px; padding-top: 5px; padding-right: 10px;">未設定</a>
+                    <a href="">天気</a>
+                </div>
+                <div id="box">
+                    <img src="https://s.yimg.jp/c/icon/s/bsc/2.0/transit80.png" alt="" width="50%" height="50%" style="margin-left: 15px;">
+                    <a href="">路線</a>
+                </div>
+                <div id="box">
+                    <img src="https://s.yimg.jp/c/icon/s/bsc/2.0/shopping80.png" alt="" width="50%" height="50%" style="margin-left: 15px;">
+                    <a href="">ショッピング</a>
+                </div>
+                <div id="box">
+                    <img src="https://s.yimg.jp/c/icon/s/bsc/2.0/sports80.png" alt="" width="50%" height="50%"style="margin-left: 15px;">
+                    <a href="">スポーツナビ</a>
+                </div>
+                <div id="box">
+                    <img src="../image/image/mobie_icon2.png" alt="" width="45%" height="60%"style="margin-left: 15px;">
+                    <a href="">ヤフオク!</a>
+                </div>
+                <div id="box">
+                    <img src="../image/image/mobile_icon.png" alt="" width="64%" height="50%"style="margin-left: 13px;">
+                    <a href="">PayPay</a>
+                </div>
+                <div id="box">
+                    <img src="https://s.yimg.jp/c/icon/s/bsc/2.0/finance80.png" alt="" width="50%" height="50%"style="margin-left: 15px;">
+                    <a href="" style=" ">ファイナンス</a>
+                </div>
+                <div id="box">
+                    <img src="https://s.yimg.jp/c/icon/s/bsc/2.0/gyao80.png" alt="" width="50%" height="50%" style="margin-left: 15px;">
+                    <a href="">GYAO!</a>
+                </div>
+                <div id="box" style="widows: 100%; height: 50%;background-color: #ddd;">
+                    <a href="">すべて</a>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;height: 10px; background-color: #ccc;"></div>
+        
+        <div id="slidingmenu" style="position: sticky; top: 50px;">
+            <div id="slidmenuwrapper" style="display: flex; overflow: scroll;">
+            <div id="slidemenu"><a>すべて</a></div><hr>
+            <div id="slidemenu"> <a>ニュース</a></div><hr>
+            <div id="slidemenu"><a>新型コロナ</a></div><hr>
+            <div id="slidemenu"><a>クーポン</a></div><hr>
+            <div id="slidemenu"><a>芸能</a></div><hr>
+            <div id="slidemenu"><a>スポーツ</a></div><hr>
+            <div id="slidemenu"><a>話題</a></div><hr>
+            <div id="slidemenu"><a>フォロー</a></div><hr>
+            <div id="slidemenu"><a>東京五輪</a></div><hr>
+            <div id="slidemenu"><a>タブ追加</a></div><hr>
+
+
+        </div>
+    </div>
+
+        <section id="container">
+            <div id="mobile_content">
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/eternal/2017/10/27/1509081692_1427194511_1427194505_topics550x550-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">石破氏、総裁選に出馬表明</a><br>
+                    <a href="" style="font-size: 11px; color: #ff929b;">1693</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598946229_20200901-00000531-san-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">菅氏 首相の電撃辞任は想定外?</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">955</a>
+                    <a href="" style="font-size: 11px; color: #bbb;"> 9/1(火) 18:55</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598944519_20200901-00000382-nnn-000-thumb-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">セブン バウムクーヘンを回収</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">956</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">9/1(火) 17:36</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598938421_20200901-00625112-okinawat-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">入れ墨情報で高級すし店解雇 </a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">287</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">9/1(火) 19:56</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598941823_20200901-00000087-dal-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">セブン バウムクーヘンを回収</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">1730</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598947176_20200901-00000177-spnannex-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">半沢8話延期 代わりに生放送</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">1693</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://medit-pctr.c.yimg.jp/dk/auted/be35d728728982b95afb5200270e3b7641f297ab_wide_1598953921778.jpg" alt="" width="100%">
+                    <a href="" style="font-weight: bold; color: #333333;">8月生まれの「ベビーネーム」ランキング発表！　漢字では「夏」が急増</a><br>
+                    <a href="" style="font-size: 11px; color: #bbb;">ねとらぼ</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/eternal/2017/10/27/1509081692_1427194511_1427194505_topics550x550-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">石破氏、総裁選に出馬表明</a><br>
+                    <a href="" style="font-size: 11px; color: #ff929b;">1693</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598946229_20200901-00000531-san-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">菅氏 首相の電撃辞任は想定外?</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">955</a>
+                    <a href="" style="font-size: 11px; color: #bbb;"> 9/1(火) 18:55</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598944519_20200901-00000382-nnn-000-thumb-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">セブン バウムクーヘンを回収</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">956</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">9/1(火) 17:36</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598938421_20200901-00625112-okinawat-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">入れ墨情報で高級すし店解雇 </a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">287</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">9/1(火) 19:56</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598941823_20200901-00000087-dal-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">セブン バウムクーヘンを回収</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">1730</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598947176_20200901-00000177-spnannex-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">半沢8話延期 代わりに生放送</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">1693</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://medit-pctr.c.yimg.jp/dk/auted/2ed0d374737bca7bfdaaaa560f97cd3fa8e43fba_wide_1598957233167.jpg" alt="" width="100%">
+                    <a href="" style="font-weight: bold; color: #333333;">8月生まれの「ベビーネーム」ランキング発表！　漢字では「夏」が急増</a><br>
+                    <a href="" style="font-size: 11px; color: #bbb;">ねとらぼ</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/eternal/2017/10/27/1509081692_1427194511_1427194505_topics550x550-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">石破氏、総裁選に出馬表明</a><br>
+                    <a href="" style="font-size: 11px; color: #ff929b;">1693</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598946229_20200901-00000531-san-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">菅氏 首相の電撃辞任は想定外?</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">955</a>
+                    <a href="" style="font-size: 11px; color: #bbb;"> 9/1(火) 18:55</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598944519_20200901-00000382-nnn-000-thumb-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">セブン バウムクーヘンを回収</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">956</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">9/1(火) 17:36</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598938421_20200901-00625112-okinawat-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">入れ墨情報で高級すし店解雇 </a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">287</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">9/1(火) 19:56</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598941823_20200901-00000087-dal-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">セブン バウムクーヘンを回収</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">1730</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://giwiz-tpc.c.yimg.jp/q/iwiz-tpc/images/tpc/2020/09/01/1598947176_20200901-00000177-spnannex-000-view-x104-y104.jpg" alt="" style="float: left; width: 52px; height: 52px;">
+                    <a href="" style="font-weight: bold; color: #333333;">半沢8話延期 代わりに生放送</a><br>
+                    <a href="" style="font-size: 11px; color: #698ac1;">1693</a>
+                    <a href="" style="font-size: 11px; color: #bbb;">1693 9/1(火) 16:45</a>
+                </div>
+                <div id="contents">
+                    <img src="https://medit-pctr.c.yimg.jp/dk/auted/2ed0d374737bca7bfdaaaa560f97cd3fa8e43fba_wide_1598957233167.jpg" alt="" width="100%">
+                    <a href="" style="font-weight: bold; color: #333333;">8月生まれの「ベビーネーム」ランキング発表！　漢字では「夏」が急増</a><br>
+                    <a href="" style="font-size: 11px; color: #bbb;">ねとらぼ</a>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
 
 </body>
 

@@ -1,7 +1,8 @@
 html body * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
+   
 }
 
 a {
@@ -10,12 +11,22 @@ a {
     color:#1d3994;
 }
 
+.mobile_yahoo{
+    display: none;
+}
+
 #wrapper_header {
     display: flex;
     justify-content: center;
-   width: 100%;
+   
 }
 /* 맨 윗줄 */
+.hompage_yahoo{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    
+}
 #header {
     display: flex;
     flex-shrink: 0;
@@ -32,11 +43,11 @@ a {
 #header_end {
     display: flex;
     padding-left: 510px;
+    
 }
 
 /* 로고 와 아이콘 줄 */
 #headericons_wrapper {
-
     display: flex;
     justify-content: center;
 }
@@ -70,6 +81,7 @@ a {
     width: 650px;
     border: 1px solid steelblue;
     padding:10px;
+    
 }
 #headertext1{
     background: #503a87;
@@ -146,7 +158,7 @@ a {
 }
 #subanker_wrapper{
 height: 30px;
-width: 100%;
+width: 98%;
 position: absolute;
 top: 290px;
 
@@ -477,4 +489,6 @@ border: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
 }
+
+
 
